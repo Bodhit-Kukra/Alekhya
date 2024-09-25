@@ -1,0 +1,27 @@
+.banner {
+    height: 250px;
+    width: 700px;
+    border-radius: 30px;
+}
+
+.bannerText {
+    /* margin-top: 25vh; */
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: xx-large;
+    /* translate: 0 150px; */
+    /* background-color: #D8D2C2; */
+}
+
+.bannerWrapper{
+    height: 75vh;
+    background-color: #B17457;
+}
+
+/* #bannerSlider { */
+    /* margin-bottom: 300px; */
+    /* translate: -80px 150px; */
+    /* background-color: #D8D2C2; */
+/* } */

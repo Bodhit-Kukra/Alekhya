@@ -1,0 +1,62 @@
+<app-header></app-header>
+<div class="login-section d-flex align-items-center">
+    <div class="container-xl text-center">
+        <div class="row my-5">
+            <div class="col-12 my-2">
+                <h2 class="heading">Welcome !</h2>
+            </div>
+            <div class="col-12 my-2 loginText">
+                Sign in with your email address and your password
+            </div>
+        </div>
+
+        <form class="form" [formGroup]="loginForm">
+            <div class="row gap-4">
+
+                <div class="col-12">
+                    <input type="email" class="rounded  form-section-inputs" name="email" id="email"
+                        placeholder="Email address" formControlName="email">
+                </div>
+
+                @if(loginForm.controls['email'].touched && loginForm.controls['email'].errors?.['required'] ) {
+                <span class="text-danger">* This is Required</span>
+                }
+                @else if (loginForm.controls['email'].touched && loginForm.controls['email'].errors?.['email'] ) {
+                <span class="text-danger">* Invalid Email</span>
+                }
+
+                <div class="col-12">
+                    <input type="password" class="rounded  form-section-inputs" name="password" id="password"
+                        placeholder="Password" formControlName="password">
+                </div>
+
+                @if (loginForm.controls['password'].touched && (loginForm.controls['password'].errors?.['required'])) {
+                <span class="text-danger">
+                    * This is Required
+                </span>
+                }
+
+                <div class="col-12 ">
+                    <a routerLink="/login" class="nav-link nav-anchor-element pwd">
+                        Forgot your password?
+                    </a>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-lg rounded-pill  form-section-button" (click)="onLogin()">LOGIN</button>
+                </div>
+
+                <div class="col-12 signUp">
+                    <span>
+                        Don't have an Alekhya account?
+                    </span>
+                    <a routerLink="/register" class="nav-link nav-anchor-element signUpButton">
+                        Sign up
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<app-footer></app-footer>

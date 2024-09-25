@@ -1,0 +1,110 @@
+<app-header></app-header>
+<div class="signUp-section d-flex align-items-center">
+<div class="container-xl text-center">
+    <div class="row my-5">
+        <div class="col-12 my-2">
+            <h2 class="heading">Create your account !</h2>
+        </div>
+        <div class="col-12 divider my-2">
+        </div>
+        <div class="col-12 my-2 signUpText">
+            Create your account to have access to a more personalised experience.
+        </div>
+        <div class="col-12 my-2 signUpText">
+            Already have an Alekhya account ? 
+            <a routerLink="/login" class="nav-link nav-anchor-element reDirectToLogin">
+                Login here.
+            </a> 
+        </div>
+    </div>
+
+    <!-- form -->
+    <form class="form" [formGroup]="registerForm">
+        <div class="row gap-4">
+            <div class="col-12 ">
+                <input type="text" class="rounded  form-section-inputs" name="name" placeholder="Full name" id="name"
+                    formControlName="name">
+            </div>
+
+            @if (registerForm.controls['name'].touched && registerForm.controls['name'].errors?.['required']) {
+            <span class="text-danger">
+                * This is required
+            </span>
+            }
+
+            <div class="col-12">
+                <input type="email" class="rounded  form-section-inputs" name="email" id="email"
+                    placeholder="Email address" formControlName="email">
+            </div>
+
+            @if(registerForm.controls['email'].touched && registerForm.controls['email'].errors?.['required'] ) {
+            <span class="text-danger">* This is Required</span>
+            }
+            @else if (registerForm.controls['email'].touched && registerForm.controls['email'].errors?.['email'] ) {
+            <span class="text-danger">* Invalid Email</span>
+            }
+
+            <div class="col-12">
+                <input type="tel" class="rounded  form-section-inputs" name="phone" id="phone"
+                    placeholder="Phone number" formControlName="phone">
+            </div>
+
+            @if (registerForm.controls['phone'].touched && (registerForm.controls['phone'].errors?.['required'])) {
+            <span class="text-danger">
+                * This is Required
+            </span>
+            }
+            @else if (registerForm.controls['phone'].touched && (registerForm.controls['phone'].errors)) {
+            <span class="text-danger">
+                * Invalid Phone Number
+            </span>
+            }
+
+            <div class="col-12 ">
+                <input type="text" class="rounded  form-section-inputs" name="address" placeholder="Address" id="address"
+                    formControlName="address">
+            </div>
+
+            @if (registerForm.controls['address'].touched && registerForm.controls['address'].errors?.['required']) {
+            <span class="text-danger">
+                * This is required
+            </span>
+            }
+            
+            <div class="col-12">
+                <input type="password" class="rounded  form-section-inputs" name="password" id="password"
+                    placeholder="Password" formControlName="password">
+            </div>
+
+            @if (registerForm.controls['password'].touched && (registerForm.controls['password'].errors?.['required'])) {
+            <span class="text-danger">
+                * This is Required
+            </span>
+            }
+
+            <div class="col-12">
+                <input type="password" class="rounded  form-section-inputs" name="confirmPassword" id="confirmPassword"
+                    placeholder="confirmPassword" formControlName="confirmPassword">
+            </div>
+
+            @if (registerForm.controls['confirmPassword'].touched && (registerForm.controls['confirmPassword'].errors?.['required'])) {
+            <span class="text-danger">
+                * This is Required
+            </span>
+            }
+            @else if (registerForm.controls['confirmPassword'].touched && (registerForm.controls['confirmPassword']  != registerForm.controls['password'])) {
+                <span class="text-danger">
+                    * Password Mismatch !
+                </span>
+            }
+           
+
+            <div class="col-12">
+                <button class="btn btn-lg rounded-pill  form-section-button" (click)="onRegister()">SIGN UP</button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+
+<app-footer></app-footer>

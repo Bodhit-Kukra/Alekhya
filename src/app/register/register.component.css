@@ -1,0 +1,50 @@
+.signUp-section {
+    height: 125vh;
+    background: linear-gradient(to right, rgba(135, 162, 255, 0.7), rgba(255, 244, 181, 1))
+}
+
+.form-section-inputs {
+    padding: 10px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+.form-section-button {
+    background-color: #0a55eb;
+    color: white;
+    font-size: small;
+    font-weight: bolder;
+    opacity: 0.7;
+    /* font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger; */
+}
+
+.form-section-button:hover {
+    opacity: 1;
+    background-color: #0a55eb;
+    color: white;
+    /* font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal; */
+}
+
+.heading {
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.signUpText, .form-section-inputs {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.reDirectToLogin {
+    text-decoration: underline;
+
+}

@@ -1,0 +1,65 @@
+.login-section {
+    background: linear-gradient(to right, rgba(229, 217, 242, 0.6), rgba(205, 193, 255, 1));
+    height: 90vh;
+}
+
+.form-section-inputs {
+    padding: 10px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+.form-section-button {
+    background-color: #0a55eb;
+    color: white;
+    font-size: small;
+    font-weight: bolder;
+    opacity: 0.7;
+    /* font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal; */
+    /* font-size: larger; */
+}
+
+.form-section-button:hover {
+    opacity: 1;
+    background-color: #0a55eb;
+    color: white;
+    /* font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal; */
+}
+
+.heading {
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.loginText, .form-section-inputs {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.pwd {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    /* color: black; */
+    text-decoration: underline;
+}
+
+.signUp {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.signUpButton {
+    text-decoration: underline;
+}
