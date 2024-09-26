@@ -2,7 +2,7 @@
 
 .paintings-section {
     height: 80vh;
-    background: linear-gradient(to right, rgba(135, 162, 255, 0.7), rgba(255, 244, 181, 0.7)), url('./../../../public/pb.jpg') center;
+    background: linear-gradient(to right, rgba(79, 83, 97, 0.719), rgba(99, 105, 82, 0.7)), url('./../../../public/sb.webp') bottom;
     /* background-repeat: no-repeat; */
     background-size: cover;
     font-family: "Satisfy", cursive;

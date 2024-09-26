@@ -1,6 +1,5 @@
-
-<section class="bgWrapper">
-<div class="categoriesSelection py-5 d-flex justify-content-center">What do you want to Explore?</div>
+<section id="categoriesSection" class="bgWrapper">
+    <div class="categoriesSelection py-5 d-flex justify-content-center">What do you want to Explore?</div>
 
     <div class="categories d-flex justify-content-around align-items-center">
         <div class="category" id="category1">
@@ -10,16 +9,22 @@
             </a>
         </div>
         <div class="category" id="category2">
-            <img src="c2.jpeg" alt="sculpture" width="250px" height="250px" class="categoryImage">
-            <h2 class="text">Sculpture</h2>
+            <a routerLink="/sculptures" class="nav-link nav-anchor-element">
+                <img src="c2.jpeg" alt="sculpture" width="250px" height="250px" class="categoryImage">
+                <h2 class="text">Sculpture</h2>
+            </a>
         </div>
         <div class="category" id="category3">
-            <img src="c3.jpg" alt="pottery" width="250px" height="250px" class="categoryImage">
-            <h2 class="text">Pottery</h2>
+            <a routerLink="/pottery" class="nav-link nav-anchor-element">
+                <img src="c3.jpg" alt="pottery" width="250px" height="250px" class="categoryImage">
+                <h2 class="text">Pottery</h2>
+            </a>
         </div>
         <div class="category" id="category4">
-            <img src="c4.jpg" alt="Textile Art" width="250px" height="250px" class="categoryImage">
-            <h2 class="text">Textile Art</h2>
+            <a routerLink="/textile" class="nav-link nav-anchor-element">
+                <img src="c4.jpg" alt="Textile Art" width="250px" height="250px" class="categoryImage">
+                <h2 class="text">Textile Art</h2>
+            </a>
         </div>
     </div>
 </section>

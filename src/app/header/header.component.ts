@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { CategoriesComponent } from './../categories/categories.component';
+import { Component, OnInit} from '@angular/core';
 import { CarouselComponent } from "../carousel/carousel.component";
-import { CategoriesComponent } from "../categories/categories.component";
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { BannersComponent } from "../banners/banners.component";
 import { FooterComponent } from "../footer/footer.component";
 import { ContactComponent } from "../contact/contact.component";
@@ -13,6 +13,7 @@ import { ContactComponent } from "../contact/contact.component";
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent{
 
+  
 }

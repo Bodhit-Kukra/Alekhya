@@ -1,7 +1,25 @@
 <!-- Header -->
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <i class="fa-solid fa-list mx-2"></i>
+
+
+        <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <!-- Link with href -->
+
+                    <i class="fa-solid fa-list mx-2"></i>
+
+          </a>
+          <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Button with data-bs-target
+          </button> -->
+          
+          
+
+
+
+
+
+        <!-- <i class="fa-solid fa-list mx-2"></i> -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -29,6 +47,31 @@
         </div>
     </div>
 </nav>
+
+<div class="offcanvas offcanvas-start offcanvasText" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close mx-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button  class="offcanvas-title" data-bs-dismiss="offcanvas" aria-label="Close" id="offcanvasExampleLabel">Close</button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex justify-content-between">
+        <a routerLink="/paintings" data-bs-dismiss="offcanvas" class="hoverOffcanvas nav-link nav-anchor-element custom-underline my-2" >Paintings</a>
+        <i class="fa-solid fa-chevron-right hide"></i>
+      </div>
+      <div class="d-flex justify-content-between">
+        <a routerLink="/sculptures" data-bs-dismiss="offcanvas" class="hoverOffcanvas nav-link nav-anchor-element custom-underline my-2" >Sculptures</a>
+        <i class="fa-solid fa-chevron-right hide"></i>
+      </div>
+      <div class="d-flex justify-content-between">
+        <button routerLink="/pottery" data-bs-dismiss="offcanvas" class="hoverOffcanvas nav-link nav-anchor-element custom-underline my-2" >Pottery</button>
+        <i class="fa-solid fa-chevron-right hide"></i>
+      </div>
+      <div class="d-flex justify-content-between">
+        <button routerLink="/textile" data-bs-dismiss="offcanvas" class="hoverOffcanvas nav-link nav-anchor-element custom-underline my-2" >Textile Art</button>
+        <i class="fa-solid fa-chevron-right hide"></i>
+      </div>
+    </div>
+  </div>
 
 <!-- <router-outlet></router-outlet> -->
 

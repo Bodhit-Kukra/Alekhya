@@ -1,17 +1,79 @@
-.logo{
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Satisfy", cursive;
-    font-weight: 900;
-    font-style: italic;
-    font-size: xx-large;
-    letter-spacing: 8px;
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Satisfy", cursive;
+  font-weight: 900;
+  font-style: italic;
+  font-size: xx-large;
+  letter-spacing: 8px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #FAF7F0;
+}
+
+.offcanvasText {
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* font-size: xx-large; */
+}
+
+.btn-close {
+  font-size: smaller;
+}
+
+#offcanvasExampleLabel {
+  text-decoration: none;
+  background-color: #fff;
+  border: 0;
+  font-weight: 200;
+  font-size: smaller;
+}
+
+.hide {
+  display: none;
+}
+
+.hoverOffcanvas:hover {
+  font-weight: 600;
+}
+
+.hoverOffcanvas:hover+.hide {
+  display: block;
+  translate: 0 10px;
+  /* text-decoration: underline; */
+
+}
+
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  /* Ensure the pseudo-element positions correctly */
+}
+
+.custom-underline:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 1px;
+  background-color: rgba(55, 52, 52, 0.432);
+  z-index: -1;
+  animation: underline 0.7s;
+}
+
+@keyframes underline {
+  from {
+    width: 0%;
   }
 
-  .navbar{
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: #FAF7F0;
+  to {
+    width: 100%;
   }
-  
+}
